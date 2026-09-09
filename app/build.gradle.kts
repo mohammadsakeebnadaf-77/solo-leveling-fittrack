@@ -1,6 +1,5 @@
 plugins {
     id("com.android.application")
-    id("org.jetbrains.kotlin.android")
     id("org.jetbrains.kotlin.plugin.compose")
     id("com.google.devtools.ksp")
 }
@@ -43,6 +42,7 @@ dependencies {
     implementation("androidx.room3:room3-runtime:3.0.2")
     implementation("androidx.room3:room3-ktx:3.0.2")
     ksp("androidx.room3:room3-compiler:3.0.2")
+    implementation("androidx.sqlite:sqlite-bundled:2.6.2")
 
     implementation("androidx.health.connect:connect-client:1.1.0")
 }
